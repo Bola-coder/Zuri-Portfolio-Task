@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+  
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem;
+    padding-bottom: 0;
+    color: #777;
+}
+
+/* Styling the header section */
+
+header{
+    /* background-color: green; */
+    background-image: linear-gradient(to right bottom,
+    #4b5949b3, 
+    #425750c7), 
+    url(images/macbooklaptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.logo{
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.logo img{
+    margin: 1rem;
+    width: 6rem;
+    border-radius: 2rem;
+}
+
+.nav-links{
+    display: inline-block;
+    position: absolute;
+    right: 6rem;
+    top: 4rem;
+}
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li{
+    float: left;
+    padding: 1rem 2rem;
+}
+
+.nav-links a:link, a:visited{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eee;
+    transition: transform .2s ease-in;
+}
+
+.nav-links a:hover{
+    transform: translateY(-.7rem);
+    border-bottom: 3px solid rgb(206, 198, 198);
+    /* border-radius: .3rem; */
+}
+
+.nav-links a:focus{
+    outline: 0;
+}
+
+/* Styling the Header Details Section */
+
+.details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.details--main, .details--sub{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}
+
+.details--main{
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+}
+
+.details--sub{
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+}
+
+.btn{
+    background-color: #fff;
+    margin-top: 5rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: .5rem .8rem 1rem rgb(77, 72, 72);
+}
+/* End of Header Styling */
+
+/* Styling the Skills and Education Section */
+
+#skills{
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#skills h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.skill-set{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.education{
+    flex-basis: 30%;
+    padding: 2rem;
+}
+
+.education--header{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+ul{
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+li{
+    padding: 1rem;
+}
+
+.skills{
+    text-align: center;
+    flex-basis: 30%;
+    padding: 2rem;
+    border-left: 4px solid #555;
+    border-right: 4px solid #555;
+}
+
+.skills--header{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.experience{
+    flex-basis: 30%;
+    padding: 2rem;
+}
+
+.experience--header{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/* End of Skills section */
+
+/* Projects Section */
+
+#projects{
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#projects h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+#projects img{
+    width: 50rem;
+}
+
+.project-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project{
+    flex-basis: 40%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.project h4{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: rgb(61, 58, 58);
+}
+.project p{
+    font-size: 2rem;
+}
+.project-link:link, .project-link:visited{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(124, 93, 93);
+}
+
+ .project-link:hover{
+    text-decoration: underline;
+}
+
+/* Styling contact page */
+
+#contacts{
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#contacts h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.contact-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socials h4, .phonebook h4{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: .5rem;
+    color: #555;
+    text-align: center;
+}
+
+.socials a{
+    flex-basis: 40%;
+    padding: 3rem;
+}
+
+.phonebook ul{
+    list-style-type: none;
+}
+
+.phonebook ul li{
+    color: #444;
+}
+
+footer{
+    margin-top: 4rem;
+    background:  linear-gradient(to right bottom,
+    #4b5949b3, 
+    #425750c7);
+    padding: 4rem;
+    text-align: center;
+}
+footer p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Media Queries to make it responsive */
+
+/* Styling for small laptops */
+@media screen and (max-width: 1024px){
+
+    #projects{
+        flex-wrap: nowrap;
+    }
+    #projects img{
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    html{
+        font-size: 9px;
+    }
+    .logo img{
+        width: 5.5rem;
+    }
+
+    .nav-links {
+        top: 4rem;
+        right: 5rem;
+    }
+
+    .nav-links li{
+        padding: 1rem 1.5rem;
+    }
+
+    .details--main{
+        font-size: 3.5rem;
+    }
+
+    .details--sub{
+        font-size: 1.5rem;
+    }
+
+    .skill-set{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills{
+        border: none;
+        text-align: left;
+    }
+
+    .socials a {
+        padding: 2rem;
+    }
+
+    footer{
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    html{
+        font-size: 8px;
+    }
+
+    .nav-links{
+        display: block;
+        top: 2rem;
+        right: 4rem;
+    }
+
+    .nav-links li{
+        float: none;
+    }
+
+    .details--main{
+        font-size: 3rem;
+    }
+
+    .details--sub{
+        font-size: 1.2rem;
+        letter-spacing: .6rem;
+    }
+
+    .btn{
+        padding: 1rem 2.5rem;
+        font-size: 1.7rem;
+    }
+
+    #projects img{
+        width: 35rem;
+    }
+
+    .contact-group{
+        flex-direction: column;
+    }
+
+    .socials {
+        margin-bottom: 2rem;
+    }
+
+    .socials a{
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .nav-links{
+        right:  2rem;
+    }
+
+    .nav-links a:link, a:visited{
+        font-size: 1.7rem;
+    }
+
+    .details--main{
+        font-size: 2.8rem;
+    }
+
+    .details--sub{
+        font-size: 1.1rem;
+        letter-spacing: .6rem;
+    }
+    #projects h2, #skills h2, #contatcs h2{
+        font-size: 2.8rem;
+    }
+
+    #projects img{
+        width: 28rem
+    }
+}
